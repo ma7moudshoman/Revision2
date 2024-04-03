@@ -32,6 +32,8 @@ public class Main {
 
         System.out.println(r);*/
 /*
+
+
  String k="AAA";
 int x=5;
         switch (5 ){
@@ -47,7 +49,7 @@ int x=5;
             default:
                 System.out.println("it is not an option");
         }*/
-/*
+
         int  counter =1 ;
         while (counter++ <=5 ){
             System.out.println(counter  + " = Hi");
@@ -55,19 +57,8 @@ int x=5;
 
         }
 
-        System.out.println("counter = " + counter);*/
+        System.out.println("counter = " + counter);
 
-        char letter='a';
-boolean flag=true;
-        int d=0;
-        while (flag)
-        {
-            letter=input.next().charAt(0);
-d++;
-if (letter=='k')
-    flag=false;
-        }
-        System.out.println("invalid "+ d);
 
     }
     }
