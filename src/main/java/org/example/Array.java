@@ -3,9 +3,10 @@ package org.example;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
 public class Array {
 
-    public static void start(int [] x){
+  /*  public static void start(int [] x){
         for (int i=0;i<x.length;i++){
                System.out.print(x[i]);
         }
@@ -14,10 +15,64 @@ public class Array {
     static  int []getArray(){
         int []arr={1,2,7,3};
         return arr;
-    }
+    }*/
     public static void main(String[]args){
+                            // 3 >>>>> row
+                           // 4 >>>>>> column
+        int [] [] array={
+
+                {4,8,9},
+                {1,5,6},
+                {4,6,9},
+                {7,2,3}
+        };
+
+        for (int i=0;i<3;i++){
+            for (int h=0;h<4;h++){
+                System.out.print(array[h][i] + " ");
+            }
+            System.out.println();
+        }
+
+        //      or
+
+        /*
+        for (int i=0;i<array[0].length;i++){
+
+            for (int y =0 ; y<array[i].length;y++){
+
+                System.out.print(array[i][y] + " ");
+            }
+            System.out.println();
+        }*/
+
+    //    System.out.println(array[2].length);
 
 
+     /*   array[0][0]=55;
+        array[0][1]=99;
+        array[0][2]=59;
+        array[0][3]=33;
+
+        array[1][0]=54;
+        array[1][1]=98;
+        array[1][2]=56;
+        array[1][3]=34;
+
+
+        array[2][0]=51;
+        array[2][1]=93;
+        array[2][2]=57;
+        array[2][3]=39;
+*/
+
+
+
+   //*****************************************************
+
+
+
+/*
         int arr1[]={1,2,3};
         int[]arr2={30,40,50};
         int[]arr3={60,70,80};
@@ -28,6 +83,7 @@ public class Array {
             System.out.println(arr1[0]);
         System.out.println(arr2[0]);
         System.out.println(arr3[0]);
+*/
 
 
 
