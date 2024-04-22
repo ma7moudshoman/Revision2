@@ -1,6 +1,6 @@
 package org.example;
 
-public class go extends Developer{
+public class go extends Employee{
     private  String sara;
 
     public go() {

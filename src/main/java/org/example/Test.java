@@ -2,8 +2,21 @@ package org.example;
 
 public class Test {
     public static void main(String[]args){
-Developer j=new Developer("Developer","omar","mshoman989@gmail.com","01063920025","iti","Cairo",14/4/1998);
 
-        System.out.println(j);
-    }
+      Employee e=new Employee("mahmoud","mshpma@1556.com","aman","cairo",1500);
+        System.out.println(e.getSalary());
+
+        SalariedDeveloper salariedDeveloper=new SalariedDeveloper("mahmoud","mshpma@1556.com","aman","cairo",1000,200);
+
+
+        System.out.println(salariedDeveloper.getSalary());
+
+        DailyDeveloper developer=new DailyDeveloper("mahmoud","mshpma@1556.com","aman","cairo",1500,400,10);
+
+      System.out.println(developer.getSalary());
+
+
+
+
+        }
 }

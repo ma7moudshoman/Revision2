@@ -1,24 +1,22 @@
 package org.example;
 
 public class Employee {
-  protected    String name;
-    protected String emailAddress;
-    protected String phone;
-    protected String Department;
-    protected String address;
-    protected int yearOgBirth;
+  private      String name;
+    private String email;
+    private String Department;
+    private String address;
+    private float Salary;
 
     public Employee(){
-        System.out.println("No parameter Contractor");
+
     }
 
-    public Employee(String name, String emailAddress, String phone, String department, String address, int yearOgBirth) {
+    public Employee(String name, String emailAddress, String department, String address, float salary) {
         this.name = name;
-        this.emailAddress = emailAddress;
-        this.phone = phone;
+        this.email = emailAddress;
         Department = department;
         this.address = address;
-        this.yearOgBirth = yearOgBirth;
+        this.Salary =salary;
     }
 
 
@@ -31,19 +29,11 @@ public class Employee {
     }
 
     public String getEmailAddress() {
-        return emailAddress;
+        return email;
     }
 
     public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
+        this.email = email;
     }
 
     public String getDepartment() {
@@ -62,11 +52,11 @@ public class Employee {
         this.address = address;
     }
 
-    public int getYearOgBirth() {
-        return yearOgBirth;
+    public float getSalary() {
+        return Salary;
     }
 
-    public void setYearOgBirth(int yearOgBirth) {
-        this.yearOgBirth = yearOgBirth;
+    public void setSalary(int salary) {
+        this.Salary=salary;
     }
 }
