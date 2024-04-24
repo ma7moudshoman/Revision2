@@ -12,6 +12,9 @@ public class DailyDeveloper extends Employee {
     }
 
 
+    public  void print(){
+        System.out.println("ahmed");
+    }
     public float getSalary() {
         return getWorkedDayPrice()* dailyRate;
     }

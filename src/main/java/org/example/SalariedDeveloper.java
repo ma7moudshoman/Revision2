@@ -4,7 +4,9 @@ public class SalariedDeveloper extends Employee {
 
     float bouns;
 
+public SalariedDeveloper(){
 
+}
 
     public SalariedDeveloper(String name, String emailAddress, String department, String address, float salary, float bouns) {
         super(name, emailAddress, department, address, salary);
@@ -23,5 +25,8 @@ public class SalariedDeveloper extends Employee {
         return super.getSalary()+bouns;
     }
 
+    public  void print(){
+        System.out.println("Sub-class");
+    }
 
 }

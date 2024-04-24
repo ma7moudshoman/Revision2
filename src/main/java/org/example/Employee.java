@@ -56,6 +56,9 @@ public class Employee {
         return Salary;
     }
 
+    public  void print(){
+        System.out.println("Mahmoud");
+    }
     public void setSalary(int salary) {
         this.Salary=salary;
     }

@@ -4,7 +4,9 @@ public class HourlyDeveloper extends Employee {
     private  float workOurPrice;
     private  int hourlyRate;
 
+public HourlyDeveloper(){
 
+}
 
     public float getSalary() {
         return hourlyRate*workOurPrice;
@@ -14,6 +16,10 @@ public class HourlyDeveloper extends Employee {
         super(name, emailAddress, department, address, salary);
         this.workOurPrice = workOurPrice;
         this.hourlyRate = hourlyRate;
+    }
+
+    public  void print(){
+        System.out.println("soma");
     }
 
     public float getWorkOurPrice() {
