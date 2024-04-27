@@ -3,7 +3,97 @@ package org.example;
 import java.util.*;
 
 public class Lambda  {
+
+    static void display(){
+        System.out.println();
+        System.out.println(
+                        "1: added element \n" +
+                        "2: remove element\n " +
+                        "3: print element\n" +
+                        "4: Exit "
+        );
+        System.out.println();
+    }
     public static void main(String[]args) {
+        /*
+      create a menu program with the following options :
+          1 . add element
+          2 . remove element
+          3 . print element
+          4 . exit
+        the program will remain running as long as the user does not choose the fourth option 4
+
+         */
+
+
+        ArrayList<Integer> list = new ArrayList();
+        Scanner input = new Scanner(System.in);
+while (true){
+          display();
+                int choice = input.nextInt();
+                switch (choice) {
+                    case 1:  // add
+                        System.out.println("Enter an integer : ");
+                        list.add(input.nextInt());
+                        System.out.println("Element added");
+                        break;
+                    case 2:
+                        // remove
+                        System.out.println("Enter your integer remove");
+                        int element = input.nextInt();
+                        if (list.contains(element)) {
+                            list.remove((Integer) element);
+                            System.out.println("Element removed");
+                        } else
+                            System.out.println("Element not found");
+                        break;
+                    case 3:
+                        //print
+                        System.out.println(list);
+                        break;
+                    case 4:
+                        // exit
+                        return;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+/*
+
+ArrayList <Integer> arr=new ArrayList();
+Scanner input=new Scanner(System.in);
+
+for (int i=0;i<5;i++){
+
+            int temp = input.nextInt(); // 1
+            if (!arr.contains(temp))
+                arr.add(temp);
+
+        }
+        System.out.println(arr);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /*  ArrayList list =new ArrayList(Arrays.asList(1,2,3,'d',true ,14.3));
          *//* list.removeIf(nem-> nem%2==0);
@@ -27,15 +117,14 @@ list1.forEach(el-> System.out.print(el+ " - "));// تستخدم للمرورعل
 
 */
 
-        ArrayList list1 = new ArrayList(Arrays.asList(10, 20, 30, 40, 50, 60, 70, 80));
- //   Collections.sort(list1);// تستخدم لترتيب العناصر من الصغير الي الكبير
-   //     Collections.sort(list1,Collections.reverseOrder());// تستخدم لترتيب العناصر من الصغير للكبير
-      //Collections.reverse(list1);// تستخدم لعكس العناصر بالعكس الاول ف الاخر والاخر ف الاول
+      /*  ArrayList list1 = new ArrayList(Arrays.asList(10, 20, 30, 40, 50, 60, 70, 80));
+  Collections.sort(list1);// تستخدم لترتيب العناصر من الصغير الي الكبير
+     Collections.sort(list1,Collections.reverseOrder());// تستخدم لترتيب العناصر من الصغير للكبي
+        Collections.reverse(list1);// تستخدم لعكس العناصر بالعكس الاول ف الاخر والاخر ف الاول
 
-        System.out.println(Collections.min(list1));
-
-        System.out.println(Collections.max( list1));
-
+        System.out.println(Collections.min(list1)); // تستخدم لاخراج اصغر قيمه موجوده داخل ال array
+        System.out.println(Collections.max( list1));//تستخدم لاستخراج اكبر قيمه من دخل ال array
+*/
 
 
 
