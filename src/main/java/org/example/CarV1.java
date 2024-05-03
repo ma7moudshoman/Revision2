@@ -7,6 +7,10 @@ public class CarV1 implements Movable,SelfDrivable {
     public  CarV1(){
 
     }
+    @Override
+    public void NewMethodd(){
+
+    }
     public CarV1(int x,int y){
         this.x=x;
         this.y=y;

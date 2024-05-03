@@ -6,7 +6,8 @@ public interface Movable {
     public void moveDown();
     public void moveRight();
     public void moveLeft();
-
-
-
+public void NewMethodd();
 }
+
+
+
