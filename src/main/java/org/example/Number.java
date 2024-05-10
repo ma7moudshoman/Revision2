@@ -1,5 +1,8 @@
 package org.example;
 
+import java.time.DayOfWeek;
+import java.time.Month;
+
 import static org.example.Numbers.THREE;
 
 public class Number {
@@ -13,7 +16,7 @@ public class Number {
             public void testmethod(){
                 System.out.println("k;fv;cm");
             };
-        }, tuesday {
+           }, tuesday {
                     @Override
                     public void testmethod(){
                         System.out.println("ghitpt");
@@ -38,6 +41,8 @@ public class Number {
     }
 
     public static void main(String[]args){
+        System.out.println(DayOfWeek.FRIDAY);
+        System.out.println(Month.APRIL);
        Weekday.monday.testmethod();
       //  System.out.println(Weekday.monday.status);
 
