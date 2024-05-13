@@ -1,13 +1,89 @@
 package org.example;
 
-import java.io.FilterOutputStream;
+import java.io.*;
 
-public class exception  {
+public class exception {
+
+    static void readFile(String filePath) throws FileNotFoundException ,IOException {
+
+        //try
+        FileInputStream reader = new FileInputStream(filePath);
+        {
+
+            System.out.println("file Content : ");
+            int r = 0;
+            while ((r = reader.read()) != -1) {
+                System.out.println((char) r);
+
+            }
+        }/* catch (FileNotFoundException e) {
+        System.out.println(e);
+
+    } catch (IOException e) {
+        System.out.println(e);
+    } finally {
+        if (reader != null) {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+        }*/
+    }
+
+    //       try with resources   >> هنا مش هنحتاج اننا نعمل  finally
+
+   /*  try (FileInputStream reader = new FileInputStream(filePath); ){
+
+        System.out.println("file Content : ");
+        int r = 0;
+        while ((r = reader.read()) != -1) {
+            System.out.println((char) r);
+
+        }
+    } catch (FileNotFoundException e) {
+        System.out.println(e);
+
+    } catch (IOException e) {
+        System.out.println(e);
+    } finally {
+        if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (IOException e) {
+                        System.out.println(e);
+                    }
+        }
+    }
+}*/
+
+/*
+    try( FileInputStream reader  = new FileInputStream(filePath);) {
+
+        System.out.println("file Content : ");
+        int r = 0;
+        while ((r = reader.read()) != -1) {
+            System.out.println((char) r);
+
+        }
+    } catch (FileNotFoundException e) {
+        System.out.println(e);
+
+    } catch (IOException e) {
+        System.out.println(e);
+    }
+*/
 
     public static void main(String []args){
-
-
-       try {
+try {
+    readFile("D:\\Mahmoud");
+    }catch (FileNotFoundException e){
+        System.out.println();
+}
+    catch (IOException w){
+}
+    }
+      /* try {
            int[]arr=new int[12];
 
         arr[13]=67;
@@ -20,7 +96,7 @@ public class exception  {
        }catch (Exception e){
            System.out.println("rest of the code");
 
-       }
+       }*/
 
 
 
@@ -69,7 +145,7 @@ for (int d:arr)
     catch (NullPointerException e) {
         System.out.println(e);
     }*/
-        }}
+        }
     /*
 for (int i = 0;i<arr.length;i++){
             System.out.println(i);
