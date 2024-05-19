@@ -3,7 +3,9 @@ package org.example;
 public class ThrowFinally {
 
     public static void main(String []args){
-        try {
+
+
+      /*  try {
             int e=8/0;
         }catch
             (ArithmeticException arithmeticException) {
@@ -13,7 +15,7 @@ public class ThrowFinally {
             System.out.println("finally block");
         }
         System.out.println("rest of code");
-
+*/
 
 
 
