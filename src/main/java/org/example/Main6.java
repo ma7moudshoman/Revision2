@@ -1,16 +1,33 @@
 package org.example;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class Main6 {
-    public static void main(String[] args) throws FileNotFoundException,IOException {
+    public static void main(String[] args) throws IOException {
 
+
+
+        /*
+        File file=new File("D:\\projects/pic1.jpa");
+        FileInputStream fil=new FileInputStream(file);
+        byte b[]=new byte[(int) file.length()];
+        fil.read(b);
+        for (int i=0;i<b.length;i++){
+            System.out.println(b[i]);
+        }
+
+        FileOutputStream so=new FileOutputStream("D:\\projects/pic2.jpa");
+        so.write(b);
+        so.flush();
+        so.close();
+        fil.close();*/
+
+
+
+        /*
         FileOutputStream fos=new FileOutputStream("Text.text");
 fos.write("mahmoud".getBytes());
-fos.flush();
+fos.flush();*/
 /*
 FileInputStream fis=new FileInputStream("Text.text");
         System.out.println(fis.read());
